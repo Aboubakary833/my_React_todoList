@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(100deg, #f60, #f80);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container {text-align: center;}
+ul > li> button > span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul > li{
+  list-style: none;
+  margin: 15px auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul > li > span {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+ul > li > button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  background: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul > li > button > .lign {
+  width: 15px;
+  height: 2px;
+  background: #000;
+}
+.lign:first-of-type {
+  transform: rotate(45deg);
+}
+.lign:last-of-type {
+  transform: rotate(-45deg);
+}
+form {
+  width: 401px;
+  height: 40px;
+  background: #fff;
+  font-size: 16px;
+  margin: 50px auto;
+}
+form input {
+  width: 300px;
+  height: 37px;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+}
+form button {
+  width: 95px;
+  height: 40px;
+  margin-left: 2px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
 }
